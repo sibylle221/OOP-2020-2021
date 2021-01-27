@@ -10,6 +10,10 @@ public class Main
 
         Animal topCat = new Cat("TopCat");
 
+        Cat ginger = new Cat("Ginger");
+
+        ginger.setnumlives(9);
+
         System.out.println(misty);
         System.out.println(topCat);
 
@@ -20,6 +24,16 @@ public class Main
         System.out.println(misty);
         System.out.println(topCat);
 
+    
+        
+        ginger.kill();
+        
+        
+        
+
+
+
+
         // What will get printed out??
 
         // 1. topcat, Garfield
@@ -27,4 +41,6 @@ public class Main
 
 
     }
+
+    
 } 
