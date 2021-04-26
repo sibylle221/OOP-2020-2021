@@ -109,6 +109,7 @@ public class Audio2 extends PApplet {
     public void draw() {
         background(0);
         stroke(255);
+        surface.setResizable(true);
 
         float halfHeight = height / 2;
         for(int i = 0 ; i < ab.size() ; i ++)

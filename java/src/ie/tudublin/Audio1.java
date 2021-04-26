@@ -16,8 +16,8 @@ public class Audio1 extends PApplet {
     float[] lerpedBuffer;
 
     public void settings() {
-        //size(1000, 1000, P3D);
-        fullScreen(P3D, SPAN); // Try this for full screen multiple monitor support :-) Be careful of exceptions!
+        size(1000, 1000, P3D);
+        //fullScreen(P3D, SPAN); // Try this for full screen multiple monitor support :-) Be careful of exceptions!
     }
 
     float y = 200;
@@ -66,6 +66,7 @@ public class Audio1 extends PApplet {
         float halfHeight = height / 2;
         float average = 0;
         float sum = 0;
+        surface.setResizable(true);
 
         // Calculate the average of the buffer
         for (int i = 0; i < ab.size(); i ++)
